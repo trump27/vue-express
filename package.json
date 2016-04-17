@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "node_modules/.bin/nodemon server-dev.js",
     "build": "webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "server": "cross-env NODE_ENV=production node_modules/.bin/nodemon server.js",
+    "server": "cross-env NODE_ENV=production PORT=3002 node_modules/.bin/nodemon server.js",
     "lint": "node_modules/.bin/eslint ./src",
     "init-db": "node ./src/server/model-tasks.js"
   },
